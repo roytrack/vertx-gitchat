@@ -7,7 +7,7 @@ import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.handler.StaticHandler;
 
-public class Server  extends AbstractVerticle {
+public class Server extends AbstractVerticle {
 
   public static void main(String[] args) {
     Vertx.clusteredVertx(new VertxOptions(), ar -> {
