@@ -17,7 +17,7 @@ public class MinimalHttpServer {
       if (res.succeeded()) {
         System.out.println("Begin http server !");
       } else {
-        System.out.println("Http server occured error "+res.cause());
+        System.out.println("Http server occured error " + res.cause());
       }
     });
   }

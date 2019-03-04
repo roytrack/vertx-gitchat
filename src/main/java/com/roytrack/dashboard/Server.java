@@ -9,6 +9,8 @@ import io.vertx.ext.web.handler.StaticHandler;
 
 public class Server extends AbstractVerticle {
 
+  private JsonObject dashboard = new JsonObject();
+
   public static void main(String[] args) {
     Vertx.clusteredVertx(new VertxOptions(), ar -> {
       if (ar.succeeded()) {
@@ -19,8 +21,6 @@ public class Server extends AbstractVerticle {
       }
     });
   }
-
-  private JsonObject dashboard = new JsonObject();
 
   @Override
   public void start() {

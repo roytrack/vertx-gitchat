@@ -10,7 +10,7 @@ public class Java8Demo {
     for (int i = 0; i < 100; i++) {
       list.add(i);
     }
-    int result = list.stream().map(v->v+1).reduce(0,(v1,v2)->v1+v2);
+    int result = list.stream().map(v -> v + 1).reduce(0, (v1, v2) -> v1 + v2);
     System.out.println(result);
   }
 }
